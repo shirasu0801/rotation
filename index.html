@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>回転バー回避ゲーム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div id="ui">
+            <div>生存時間: <span id="time">0.0</span>秒</div>
+            <div>レベル: <span id="level">1</span></div>
+        </div>
+        <div id="instructions">
+            矢印キーで移動
+        </div>
+        <div id="gameOver">
+            <h2>ゲームオーバー！</h2>
+            <p>生存時間: <span id="finalTime">0.0</span>秒</p>
+            <p>レベル: <span id="finalLevel">1</span></p>
+            <button id="restartBtn">もう一度プレイ</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
